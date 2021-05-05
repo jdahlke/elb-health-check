@@ -21,9 +21,8 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   # specify any dependencies here:
-  s.add_dependency 'rails', '>= 3.0'
+  s.add_dependency 'railties'
 
   # specify any development dependencies here:
-  s.add_development_dependency 'rspec'
-  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rubocop'
 end
