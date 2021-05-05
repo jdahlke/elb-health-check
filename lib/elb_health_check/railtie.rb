@@ -1,4 +1,4 @@
-require 'rails'
+# frozen_string_literal: true
 
 module ElbHealthCheck
   class Railtie < ::Rails::Railtie
