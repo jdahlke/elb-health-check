@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ElbHealthCheck
   mattr_accessor :uris, :checks
 
@@ -5,11 +7,9 @@ module ElbHealthCheck
     yield self
   end
 
-  # Default config
-  self.uris = ['/health_check']
-  self.checks = %i(database)
+  self.uris = ['/health-check', '/healthcheck', '/health_check']
+  self.checks = %i[database]
 end
 
 require 'elb_health_check/middleware'
 require 'elb_health_check/railtie'
-
